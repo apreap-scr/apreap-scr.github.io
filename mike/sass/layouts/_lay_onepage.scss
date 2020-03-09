@@ -1,0 +1,47 @@
+.lay_onepage {
+  background-color: #2b2b2b;
+  padding-bottom: 100px;
+  text-align: center;
+  .title{
+    @include font(#ffffff, "Open Sans", 54px, 700, -2.7px);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+    line-height: 54px;
+    text-transform: uppercase;
+  }
+  .title2{
+    padding-top: 42px;
+    @include font(#ffffff, "Open Sans - Semibold", 30px, 400, -0.9px);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+    text-transform: uppercase;
+  }
+  .fon {
+    padding: 100px 0;
+    background-image: url("img/qqq/Unt8itled-3-compressor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    //height: 390px;
+  }
+  .w-link {
+    display: flex;
+    justify-content: center;
+    padding-top: 62px;
+  }
+  .link {
+    margin: 0 15px;
+    width: 170px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    @include font(#000000, Varela, 13px, 400, normal);
+  }
+  .link1 {
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+  }
+  .link2 {
+    color: #fff;
+    background-color: #196fc0;
+  }
+}

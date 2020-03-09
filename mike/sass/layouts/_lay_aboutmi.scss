@@ -1,0 +1,99 @@
+.lay_aboutmi {
+  background-image: url("img/rectangle_180-compressor.jpg");
+  .col-1 {
+    padding: 134px 0 300px 0;
+    text-align: center;
+  }
+  .logo {
+    display: block;
+    float: left;
+  }
+  .name {
+    margin-top: 95px;
+    @include font(#ffffff, "Open Sans", 40px, 700, -2px);
+    text-transform: uppercase;
+  }
+  .discr_wrap {
+    margin-top: 28px;
+  }
+  .discr {
+    @include font(#ffffff, "Open Sans", 18px, 300, -0.9px);
+    text-transform: uppercase;
+    border-bottom: solid 1px #fff;
+    display: inline-block;
+    padding: 4px;
+  }
+  .img_m {
+    padding: 43px 0 25px 0;
+  }
+  .work {
+    @include font(#ffffff, Varela, 30px, 400, -1.5px);
+    font-family: Varela;
+  }
+  .text {
+    padding-top: 50px;
+    margin: 0 auto;
+    @include font(#ffffff, Varela, 14px, 400, -0.28px);
+    line-height: 19.6px;
+    text-transform: uppercase;
+    width: percentage(650px/$max_width);
+  }
+}
+
+//.fvsdv {
+//  width: 500px;
+//  height: 200px;
+//  background-color: #fff60c;
+//  font-size: 50px;
+//  &:before {
+//    content: "def";
+//  }
+//}
+//
+//@media only screen and (max-width: $ExtraLarge - 1) {
+//  .fvsdv {
+//    &:before {
+//      content: "$ExtraLarge";
+//    }
+//  }
+//}
+//
+//@media only screen and (max-width: $Medium - 1) {
+//  .fvsdv {
+//    &:before {
+//      content: "$Medium";
+//    }
+//  }
+//}
+//border: solid 2px #fffa90;
+
+//@media only screen and (max-width: $ExtraLarge - 1) {
+//
+//}
+//
+//@media only screen and (max-width: $Medium - 1) {
+//
+//}
+
+
+@media only screen and (max-width: $ExtraLarge - 1) {
+  .lay_aboutmi{
+    .col-1 {
+      padding: 50px 0 50px 0;
+    }
+    .text{
+      width: 100%;
+    }
+  }
+
+}
+
+@media only screen and (max-width: $Medium - 1) {
+
+}
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+.Contact_us {
+  padding: 70px 0;
+  background-color: #edf1f4;
+
+  .title {
+    text-align: center;
+    @include font(#413d4b, "OpenSans-Light", 50px, 300);
+    border-bottom: 1px solid #c7c7c7;
+    width: 386px;
+    margin: 0 auto;
+    padding: 19px;
+  }
+  form {
+    text-align: center;
+    padding: 61px 5% 0;
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  input[type] {
+    width: 100%;
+    margin-bottom: 22px;
+  }
+
+  input[type=name], input[type=email], input[type=text], textarea {
+    background-color: #edf1f4;
+    &:active, &:hover, &:focus {
+      outline: 0;
+      outline-offset: 0;
+    }
+    @include font(#1b1b1b, "opensans", 28px, 400);
+    padding: 28px 44px;
+    border-radius: 50px;
+    border: 1px solid #c4c4c4;
+  }
+  textarea {
+    overflow: auto;
+    resize: none;
+    height: 326px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  input[type=submit] {
+    background-color: #ec435f;
+    @include font(#edf1f4, "opensans", 30px, 400);
+    text-transform: uppercase;
+    padding: 26px 0;
+    border: none;
+    border-radius: 50px;
+    width: 297px;
+    float: right;
+    margin: 0;
+    text-align: center;
+  }
+  ::-webkit-input-placeholder {
+    @include font(#1b1b1b, "opensans", 28px, 400);
+  }
+  ::-moz-placeholder {
+    @include font(#1b1b1b, "opensans", 28px, 400);
+  }
+  :-moz-placeholder {
+    @include font(#1b1b1b, "opensans", 28px, 400);
+  }
+  :-ms-input-placeholder {
+    @include font(#1b1b1b, "opensans", 28px, 400);
+  }
+
+}
+
+@media only screen and (max-width: $Medium - 1) {
+  .Contact_us {
+    padding: 20px 0;
+    .title {
+      font-size: 36px;
+      width: 300px;
+    }
+    input[type=name], input[type=email], input[type=text] {
+      font-size: 19px;
+      padding: 10px 15px;
+    }
+    textarea {
+      font-size: 19px;
+      padding: 20px 15px;
+    }
+    input[type=submit] {
+      padding: 14px 0;
+      font-size: 22px;
+      width: 194px;
+    }
+    ::-webkit-input-placeholder {
+      font-size: 19px;
+    }
+    ::-moz-placeholder {
+      font-size: 19px;
+    }
+    :-moz-placeholder {
+      font-size: 19px;
+    }
+    :-ms-input-placeholder {
+      font-size: 19px;
+    }
+  }
+}
+
+
+
+
+

@@ -1,0 +1,89 @@
+.lay_servicesreviews {
+
+  padding: 96px 0 40px;
+  text-align: center;
+
+  .title1 {
+    @include font(#196fc0, "Open Sans", 28px, 400, -0.84px);
+    text-transform: uppercase;
+  }
+  .title {
+    padding: 15px 0 50px;
+    @include font(#666666, Varela, 16px, 400, 3.2px);
+    text-transform: uppercase;
+  }
+
+  .title {
+    overflow: hidden;
+  }
+  .title:before,
+  .title:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 40px;
+    height: 1px;
+    background-color: #666666;
+    border: solid #FFF;
+    border-width: 0 10px;
+  }
+  .title:before {
+    margin-left: -100%;
+  }
+  .title:after {
+    margin-right: -100%;
+  }
+
+  .lay_servicesreviews-slid1 {
+    padding: 69px 0;
+    .romb {
+
+      margin: 0 auto;
+      width: 115px;
+      height: 118px;
+    }
+    .text {
+      margin: 0 auto;
+      padding-top: 40px;
+      @include font(#ffffff, "Open Sans", 14px, 400, -0.28px);
+      line-height: 23.8px;
+      width: percentage(915px/1600px);
+    }
+    .hr {
+      padding-top: 65px;
+      hr {
+        margin: 0 auto;
+        width: 50px;
+        height: 1px;
+        border: none;
+        background-color: #ffffff;
+      }
+    }
+
+    .person {
+      padding-top: 30px;
+      @include font(#ffffff, Varela, 14px, 400, -0.28px);
+
+    }
+    .discr {
+      padding-top: 11px;
+      @include font(#ffffff, Varela, 10px, 400, -0.28px);
+      text-transform: uppercase;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

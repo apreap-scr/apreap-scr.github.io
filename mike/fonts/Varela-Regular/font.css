@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Varela-Regular';
+  src: url('Varela-Regular.eot');
+  src: url('Varela-Regular.woff2') format('woff2'),
+       url('Varela-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Varela';
+  src: url('Varela.woff') format('woff'),
+       url('Varela.ttf') format('truetype'),
+       url('Varela.svg#Varela') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

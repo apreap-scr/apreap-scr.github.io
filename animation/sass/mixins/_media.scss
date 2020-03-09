@@ -1,0 +1,51 @@
+
+//------------ media new ----------------//
+@mixin respond($media) {
+
+  @if $media == small {
+    @media only screen and (max-width: $small-new - 1) {
+      @content;
+    }
+  } @else if $media == medium {
+    @media only screen and (min-width: $small-new) and (max-width: $medium-new - 1) {
+      @content;
+    }
+  } @else if $media == large {
+    @media only screen and (min-width: $medium-new) and (max-width: $extra-new - 1){
+      @content;
+    }
+  } @else if $media == extra {
+    @media only screen and (min-width: $extra-new) {
+      @content;
+    }
+  }
+
+}
+
+.container {
+  max-width: $mainWidth;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

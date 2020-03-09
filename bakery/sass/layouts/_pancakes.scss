@@ -1,0 +1,145 @@
+.pancakes {
+  background-image: url("images/bg_10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 139px 0 108px;
+  .col {
+
+  }
+  .col-1 {
+    //background-image: url("images/tastycol1fon.png");
+    background-image: url("images/taste64556.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: percentage(420px/$mainWidth);
+    $c: percentage(50px/420px);
+    -webkit-clip-path: polygon(0 100% - $c, 0 0, 100% 0, 100% 100%, $c 100%, 0 100% - $c);
+    clip-path: polygon(0 100% - $c, 0 0, 100% 0, 100% 100%, $c 100%, 0 100% - $c);
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+    .conner {
+      left: 0;
+      bottom: 0;
+      position: absolute;
+      width: percentage(50px/420px);
+      height: percentage(50px/420px);
+      background-image: url("images/coner-1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .col-2 {
+    background-color: #fff;
+    width: percentage(545px/$mainWidth);
+    padding: 80px 0 30px 63px;
+  }
+  .row {
+    padding-left: percentage(95px/$mainWidth);
+  }
+
+  .stars {
+    width: 78px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    span {
+      margin: 5px 0;
+      display: inline-block;
+      color: #ffffff;
+      line-height: 25px;
+      font-size: 25px;
+    }
+  }
+
+  .title {
+    @include font(#56534c, Alegreya, 48px, 700, 1.2px);
+  }
+  .discr {
+    @include font(#a47d5e, Alegreya, 14px, 700, 1.4px);
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+  .text {
+    margin-top: 73px;
+    @include font(#56534c, "Proxima Nova", 14px, 400, 1.4px);
+  }
+}
+
+.pancakes-time {
+  width: 200px;
+  height: 200px;
+  background-image: url("images/bg_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  //right: -105px;
+  right: percentage(-105px/545px);
+  //right: 20%;
+  top: -42px;
+  text-align: center;
+  padding-top: 27px;
+  .name {
+    @include font(#a47d5e, Alegreya, 18px, 700, 1.8px);
+    text-transform: uppercase;
+  }
+  .number {
+    margin-top: 20px;
+    @include font(#dfc691, Alegreya, 92px, 700, 9.2px);
+  }
+  .min {
+    @include font(#979285, Alegreya, 18px, 700, 1.8px);
+  }
+}
+
+//------------------------< media >------------------------------//
+
+@media only screen and (max-width: $ExtraLarge - 1) {
+  .pancakes {
+    .pancakes-time {
+
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 240px;
+      height: 100px;
+      top: -70px;
+      .number {
+        font-size: 60px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $Large - 1) {
+  .pancakes {
+    padding: 0;
+    background: none;
+    .row {
+      padding-left: 0;
+    }
+    .col {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .col-2 {
+      padding: 30px 10px 30px;
+    }
+    .pancakes-time {
+      position: relative;
+      right: 0;
+      top: 0;
+      float: right;
+    }
+  }
+}
+
+
+

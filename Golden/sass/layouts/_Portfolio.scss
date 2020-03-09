@@ -1,0 +1,86 @@
+.Portfolio {
+  text-align: center;
+  padding: 120px 0;
+  background-color: #EAEEEF;
+
+  .col-1 {
+    width: 100%;
+  }
+
+  .col-2 {
+    margin-top: 50px;
+    width: 100/3 * 1%;
+    padding: 0 17.5px;
+  }
+
+  .row {
+    margin-left: -35px;
+    margin-right: -35px;
+  }
+  .block {
+    padding-bottom: 27px;
+    background-color: #fff;
+
+  }
+
+  .title {
+    @include font(#222222, "Montserrat", 40px, 700, -1px);
+    text-transform: uppercase;
+  }
+  .title2 {
+    padding-top: 18px;
+    padding-bottom: 25px;
+    @include font(#777777, "Droid Serif", 16px, normal);
+    font-style: italic;
+  }
+  .text1 {
+    padding-top: 30px;
+    @include font(#333333, "Montserrat", 18px, normal);
+
+  }
+  .wrap-img {
+
+  }
+  .img {
+    width: 100%;
+  }
+  .text2 {
+
+    padding-top: 5px;
+    @include font(#737373, "Droid Serif", 14px, normal);
+    font-style: italic;
+  }
+
+}
+
+@media only screen and (max-width: $Medium - 1) {
+  .Portfolio {
+    .title{
+      font-size: 30px;
+    }
+    .title2 {
+
+    }
+    padding: 20px 0;
+    .col-2 {
+      margin-top: 20px;
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: $Small - 1) {
+  .Portfolio {
+    .col-2 {
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+
+
+
+

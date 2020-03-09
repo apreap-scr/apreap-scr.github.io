@@ -1,0 +1,65 @@
+.lay_fromtwiter {
+  text-align: center;
+  background-image: url("img/rectangle_23.jpg");
+  padding: 110px 0;
+  .col {
+    width: 100%;
+  }
+  .romb {
+    margin: 0 auto;
+    width: 94px;
+    height: 94px;
+    border: 2px solid #ffffff;
+
+    color: #ffffff;
+    font-family: "Font Awesome";
+    font-size: 30px;
+    font-weight: 400;
+    @include align();
+  }
+  .title {
+    padding-top: 60px;
+    @include font(#ffffff, Varela, 14px, 400, -0.42px);
+    text-transform: uppercase;
+
+  }
+  .hr {
+    padding: 30px;
+    hr {
+      margin: 0 auto;
+      width: 50px;
+      height: 1px;
+      border: none;
+      background-color: #bbbbbb;
+    }
+  }
+  .text {
+    margin: 0 auto;
+    width: percentage(828px/$max_width);
+    @include font(#ffffff, "Open Sans", 15px, 300);
+    line-height: 24px;
+    .e1 {
+      color: #196fc0;
+    }
+  }
+  .link {
+    display: inline-block;
+   margin-top: 71px;
+    padding: 15px 38px;
+    //display: block;
+    //@include align();
+    border: 1px solid #f0f0f0;
+
+    @include font(#ffffff, Varela, 13px, 400);
+    text-transform: uppercase;
+  }
+}
+
+
+
+
+
+
+
+
+

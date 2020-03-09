@@ -1,0 +1,74 @@
+.lay_services {
+  padding: 105px 0 65px 0;
+  text-align: center;
+  .col {
+    width: 100%;
+  }
+
+  .line_rombs {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .title {
+    padding-top: 107px;
+    @include font(#196fc0, Varela, 32px, 400, -1.6px);
+    text-transform: uppercase;
+  }
+  .dscr {
+    padding-top: 15px;
+    @include font(#666666, Varela, 16px, 400, 3.2px);
+    text-transform: uppercase;
+  }
+  .w_romb {
+    width: 150px;
+    &:hover {
+      .name {
+        color: $color_blue;
+      }
+      .romb {
+        background-color: $color_blue;
+        * {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .romb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid #dddddd;
+    width: 76px;
+    height: 76px;
+    box-shadow: 5px 5px 0px 0px #E5E5E5,
+    5px 5px 0px 0px #E5E5E5,
+    5px 5px 0px 0px #E5E5E5;
+  }
+
+  .romb-content {
+    width: 76px;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .img {
+    color: #010000;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .name {
+    padding-top: 50px;
+    @include font(#000000, Varela, 12px, 400, normal);
+    text-transform: uppercase;
+  }
+  .num {
+    @include font(#000000, Varela, 28px, 400, normal);
+    line-height: 38.4px;
+  }
+}

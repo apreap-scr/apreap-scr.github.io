@@ -1,0 +1,111 @@
+.lay_contact {
+  padding: 100px 0 95px;
+  .col {
+    width: 100%;
+    text-align: center;
+  }
+  .title1 {
+    @include font(#196fc0, Varela, 32px, 400, -1.6px);
+    text-transform: uppercase;
+  }
+  .title {
+    @include font(#666666, Varela, 16px, 400, 3.2px);
+    text-transform: uppercase;
+  }
+  .title {
+    overflow: hidden;
+  }
+  .title:before,
+  .title:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 40px;
+    height: 1px;
+    background-color: #666666;
+    border: solid #FFF;
+    border-width: 0 10px;
+  }
+  .title:before {
+    margin-left: -100%;
+  }
+  .title:after {
+    margin-right: -100%;
+  }
+
+  .send {
+    padding-top: 80px;
+    @include font(#000000, "Open Sans", 17px, 700);
+    text-transform: uppercase;
+  }
+  .hr {
+    padding: 30px;
+    hr {
+      margin: 0 auto;
+      width: 50px;
+      height: 1px;
+      border: none;
+      background-color: #bbbbbb;
+    }
+  }
+  .form {
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+      outline: none;
+    }
+    input {
+      padding: 15px;
+      margin: 0 15px;
+      width: percentage(270px/$max_width);
+      border: none;
+      border-bottom: 1px solid #dddddd;
+
+      @include font(#666666, Varela, 12px, 400);
+      text-transform: uppercase;
+    }
+
+    input::placeholder {
+      opacity: 1; /* Firefox */
+      @include font(#666666, Varela, 12px, 400);
+      text-transform: uppercase;
+    }
+    textarea {
+      padding-left: 8px;
+
+      height: 98px; /* Высота поля в пикселах */
+      resize: none; /* Запрещаем изменять размер */
+      margin-top: 50px;
+      width: percentage(870px/$max_width);
+      border: none;
+      border-bottom: 1px solid #dddddd;
+    }
+    textarea::placeholder {
+      opacity: 1; /* Firefox */
+      @include font(#666666, Varela, 12px, 400);
+      text-transform: uppercase;
+    }
+    input[type="submit"] {
+      cursor: pointer;
+      margin-top: 43px;
+      width: percentage(870px/$max_width);
+      background: none;
+      border: 1px solid #dddddd;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

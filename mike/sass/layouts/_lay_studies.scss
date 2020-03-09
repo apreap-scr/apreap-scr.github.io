@@ -1,0 +1,25 @@
+.lay_studies {
+  padding: 150px 0;
+  background-image: url("img/rectangle_159.jpg");
+  text-align: center;
+  .title{
+    @include font(#ffffff, Varela, 16px, 400, normal);
+    text-transform: uppercase;
+  }
+  .text{
+    padding: 20px 0 95px 0;
+    @include font(#ffffff, "Open Sans", 36px, 300, -2.16px);
+    line-height: 43.2px;
+    .look{
+      @include font(#196fc0, "Open Sans", 36px, 300, -2.16px);
+      line-height: 43.2px;
+    }
+  }
+  .button{
+    display: inline-block;
+    background-color: $color_blue;
+    padding: 16px 31px;
+    @include font(#ffffff, Varela, 13px, 400, normal);
+    text-transform: uppercase;
+  }
+}

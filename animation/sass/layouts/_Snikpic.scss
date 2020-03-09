@@ -1,0 +1,127 @@
+
+.Snikpic {
+  padding: 90px 0 0 0;
+  background-color: #39a7ff;
+  text-align: center;
+  margin-top: -130px;
+  padding-top: 215px;
+  clip-path: polygon(0px 0px, 50% 127px, 100% 0px, 100% 100%, 0px 100%);
+  .title {
+    margin: 0 auto;
+  }
+  .wrap-img {
+    width: 245px;
+    height: 245px;
+    margin: 0 auto;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 21px rgba(255, 255, 255, 1);
+    background-color: #fff;
+    border-radius: 40px;
+    img {
+      transform: rotate(-45deg);
+    }
+  }
+  .item-top {
+    padding: 50px 0;
+  }
+  .item-top-tramsform {
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    transform: skew(0, 10deg);
+
+  }
+  .item-top-text {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 53.09px;
+  }
+  .item {
+    padding: 60px;
+  }
+  .line-vertical {
+    background-color: #319aed;
+    width: 9px;
+    height: 78%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .line-hor {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .fon {
+      width: 45%;
+      height: 8px;
+      background-color: #319aed;
+    }
+  }
+  .text {
+    padding-top: 60px;
+    text-transform: uppercase;
+    .light {
+      @include font(#ffffff, "OpenSans-Light", 26px, 300);
+    }
+    .bold {
+      @include font(#ffffff, "OpenSans-ExtraBold", 26px, 400);
+    }
+    .up {
+      text-transform: none;
+    }
+  }
+}
+
+@media only screen and (max-width: $Medium - 1) {
+  .Snikpic {
+    padding-top: 176px;
+    .item {
+      padding: 10px;
+    }
+    .text {
+      font-size: 15px;
+      padding-top: 40px;
+      .light {
+        font-size: 15px;
+      }
+      .bold {
+        font-size: 15px;
+      }
+    }
+    .line-vertical {
+      height: 72%;
+      width: 6px;
+    }
+    .line-hor {
+      .fon {
+        height: 6px;
+      }
+    }
+    .title {
+      width: 120px;
+      img {
+        width: 100%;
+      }
+    }
+    .wrap-img {
+      width: 100px;
+      height: 100px;
+      img {
+        width: 60%;
+      }
+    }
+    .item-top {
+      img {
+        width: 90%;
+      }
+    }
+  }
+}
+
+

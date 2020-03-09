@@ -1,0 +1,212 @@
+.artOfCakes {
+  padding: 105px 0;
+  .col {
+
+  }
+  .col-1, .col-2 {
+    width: 50%;
+  }
+  .col-1 {
+    padding: 0 percentage(70px/$mainWidth);
+  }
+  .col-2 {
+    padding: 0 percentage(9px/$mainWidth);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  text-align: center;
+  .title {
+    @include font-source(Alegreya, 48px, #56534c);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+  .discr {
+    @include font-source(Alegreya, 14px, #a47d5e);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    margin-top: 30px;
+  }
+  .text {
+    @include font-source("Proxima Nova", 14px, #56534c);
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    text-align: justify;
+    margin-top: 67px;
+  }
+  .person {
+    @include font-source(Alegreya, 24px, #56534c);
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    margin-top: 42px;
+  }
+  .after, .before {
+    border-bottom: solid 1px #d7d5ca;
+    border-top: solid 1px #d7d5ca;
+    width: 111px;
+    height: 60px;
+
+    color: #56534c;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 60px;
+
+    letter-spacing: 0.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .photo {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapp-person {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blockquote:before, .blockquote:after {
+    opacity: 0.5;
+    color: #56534c;
+    font-family: "Times New Roman PSMT";
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+  .blockquote:before {
+    content: '“';
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
+  .blockquote:after {
+    content: '”';
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+  }
+  .blockquote p {
+    color: #a47d5e;
+    font-family: Scriptina;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .blockquote {
+    margin: 0 auto;
+    width: 360px;
+    padding: 30px 0;
+  }
+}
+
+.artOfCakes-tastes {
+  width: 100%;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .fon {
+    background-image: url("images/art-fon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: percentage(245px/610px);
+    height: percentage(245px/610px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include font(#c9b176, Alegreya, 30px, 400, 1.5px);
+    text-transform: uppercase;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  .cont {
+    position: absolute;
+    width: percentage(295px/610px);
+    height: percentage(250px/520px);
+  }
+  .cont1 {
+    top: 0;
+    left: 0;
+  }
+  .cont2 {
+    top: 0;
+    right: 0;
+  }
+  .cont3 {
+    bottom: 0;
+    left: 0;
+  }
+  .cont4 {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+//------------------------< media >------------------------------//
+@media only screen and (max-width: $Large - 1) {
+  .artOfCakes {
+    .col {
+      width: 100%;
+    }
+
+    .fon {
+      width: percentage(300px/610px);
+      height: percentage(300px/610px);
+      font-size: 6vw;
+      line-height: 6vw;
+    }
+
+    .person {
+      margin-bottom: 10px;
+    }
+
+    .text {
+      font-size: 16px;
+    }
+
+    .after, .before, .photo {
+      width: 80%;
+    }
+
+    .blockquote {
+      width: 90%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

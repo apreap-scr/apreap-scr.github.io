@@ -1,0 +1,172 @@
+.lay_reviews {
+  background-color: #EEEEEE;
+  .col {
+    width: 97%;
+    margin: 0 auto;
+  }
+  .button-wrap {
+    width: 100%;
+    @include align();
+
+  }
+  .button {
+    width: 25px;
+    height: 25px;
+    margin: 73px 5px 45px;
+    @include align();
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+  }
+
+  // block
+  .ui-widget.ui-widget-content {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    border: none;
+  }
+  // ul
+  .ui-tabs .ui-tabs-nav {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 3px $color_blue;
+  }
+  // li
+  .ui-tabs .ui-tabs-nav li {
+    border: none;
+    border-radius: 0;
+    width: 20%;
+    height: 160px;
+    margin: 0;
+    padding: 0;
+
+  }
+  // a
+  .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    border: none;
+    height: 100%;
+    width: 100%;
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .ui-state-active, .ui-tabs-active {
+    background: none;
+    .rectangle-wrap {
+      background-color: $color_blue;
+    }
+    .rectangle-name {
+      display: none;
+    }
+    .rectangle-romb {
+      width: 80px;
+      height: 80px;
+      font-size: 34px;
+      color: $color_blue;
+
+      [class^="flaticon-"]:before,
+      [class*=" flaticon-"]:before, [class^="flaticon-"]:after,
+      [class*=" flaticon-"]:after {
+        color: $color_blue;font-size: 30px;
+      }
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -60px;
+      transform: translateX(-50%);
+      border: 35px solid transparent;
+      border-top: 35px solid $color_blue;
+    }
+  }
+  //------
+  .rectangle-wrap {
+    width: 100%;
+    height: 100%;
+    @include align(space-around);
+    flex-direction: column;
+    background-color: #FFFFFF;
+  }
+  .pick_grey {
+    border-left: solid 1px #EEEEEE;
+    border-right: solid 1px #EEEEEE;
+    background-color: #FBFBFB;
+  }
+  .rectangle-romb {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    @include align();
+    [class^="flaticon-"]:before,
+    [class*=" flaticon-"]:before, [class^="flaticon-"]:after,
+    [class*=" flaticon-"]:after {
+      margin: 0;
+      font-size: 20px;
+      color: #000;
+    }
+  }
+  .rectangle-name {
+    @include font(#000000, "Open Sans - Semibold", 14px, 400, -0.42px);
+    text-transform: uppercase;
+  }
+  //------------------
+  .ui-tabs-panel {
+    padding: 0;
+    margin: 0;
+  }
+  .fragment-content-wrap {
+    display: flex;
+    .name {
+      @include font(#000000, "Open Sans", 28px, 400, -0.84px);
+      padding-top: 115px;
+    }
+    .cont {
+      padding-top: 25px;
+      @include font(#000000, "Open Sans", 13px, 300);
+      line-height: 22.1px;
+      height: 155px;
+      overflow: hidden;
+    }
+    .hr {
+      margin-top: 45px;
+      width: 50px;
+      height: 1px;
+      background-color: #999999;
+    }
+    .cont-wrap {
+
+    }
+    .link {
+      display: block;
+      margin-top: 24px;
+      @include font(#196fc0, Varela, 11px, 400);
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+    .photo {
+      width: 100%;
+    }
+  }
+  .fragment-content-col-1, .fragment-content-col-2 {
+
+  }
+  .fragment-content-col-1 {
+    padding-right: 45px;
+    width: percentage(500px/1150px);
+  }
+  .fragment-content-col-2 {
+    padding-top: 78px;
+    width: percentage(650px/1150px);
+  }
+
+}
+
+
+

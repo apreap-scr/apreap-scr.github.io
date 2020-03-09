@@ -1,0 +1,143 @@
+.About_us {
+  padding: 120px 0;
+  text-align: center;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 356px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 1181px;
+    background-color: #f1f1f1;
+  }
+
+  .adapt{
+    display: none;
+  }
+  .desctop{
+    display: block;
+  }
+
+  .title {
+    @include font(#222222, "Montserrat", 40px, normal);
+    text-transform: uppercase;
+  }
+  .title2 {
+    padding-top: 18px;
+    margin-bottom: -10px;
+    @include font(#777777, "Droid Serif", 16px, normal);
+    font-style: italic;
+  }
+
+  .block {
+    margin-top: 93px;
+
+  }
+  .wrap-img {
+    display: inline-block;
+    width: 186px;
+    height: 186px;
+    border: 7px solid #f1f1f1;
+    border-radius: 50%;
+  }
+  .img {
+    width: 100%;
+    height: 100%;
+  }
+  .cont {
+    width: percentage(315px/$max_width);
+    &.left {
+      top: 0;
+      text-align: right;
+      position: absolute;
+      left: 0;
+    }
+    &.right {
+      text-align: left;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .text1 {
+      @include font(#222222, "Montserrat", 18px, normal);
+
+      text-transform: uppercase;
+      line-height: 22px;
+    }
+    .text2 {
+      padding-top: 10px;
+      @include font(#777777, "Roboto Slab", 14px, 400);
+      line-height: 22px;
+    }
+  }
+  .wrap-bottom {
+    background-color: #fed136;
+    @include font(#ffffff, Montserrat, 18px, 700, -0.45px);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    line-height: 30px;
+  }
+  .wrap-bottom-text {
+    margin-top: 20px;
+  }
+
+}
+
+@media only screen and (max-width: $Medium - 1) {
+  .About_us {
+    padding: 30px 0;
+    .text1 {
+      padding-top: 20px;
+    }
+    .title{
+      font-size: 30px;
+    }
+    .block {
+      margin-top: 50px;
+    }
+
+  }
+}
+
+@media only screen and (max-width: $Small - 1) {
+  .About_us {
+    &:before {
+      display: none;
+    }
+    .adapt{
+      display: block;
+    }
+    .desctop{
+      display: none;
+    }
+    .cont {
+      width: 100%;
+      padding-top: 20px;
+
+      &.left, &.right {
+        top: 0;
+        text-align: center;
+        position: relative;
+        left: 0;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

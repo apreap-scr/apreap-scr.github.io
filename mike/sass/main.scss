@@ -1,0 +1,97 @@
+//-----------------< reset >------------------
+@import "reset";
+
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  text-decoration: none;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+
+ul {
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+a{
+  cursor: pointer;
+}
+//------------------------< variables >----------------
+$max_width: 1170px;
+
+$Small: 576px;
+$Medium: 768px;
+$Large: 992px;
+$ExtraLarge: 1200px;
+
+$color_blue: #196FC0;
+
+$delay: 0.3s;
+//------------------------< media >--------------------
+.container {
+  max-width: $max_width;
+  width: 90%;
+  margin: 0 auto;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+//---------------------< class >-----------------------
+.rotate{
+  transform: rotate(45deg);
+  & > * {
+    transform: rotate(-45deg);
+  }
+}
+
+//-----------------------------------------------------
+@import "mixins/mixin_font_face";
+@import "mixins/other_mixins";
+
+@include font-face("Open Sans", "fonts/OpenSans/OpenSans-Regular", 500, normal, eot woff2 woff);
+@include font-face("Varela", "fonts/Varela-Regular/Varela-Regular", 500, normal, eot woff2 woff);
+@include font-face("Open Sans - Semibold", "fonts/OpenSans-Semibold/OpenSans-Semibold", 500, normal, eot woff2 woff);
+
+@import "layouts/slick_slider";
+
+@import "layouts/lay_aboutmi";
+@import "layouts/lay_navmenu";
+@import "layouts/lay_welcome";
+@import "layouts/lay_studies";
+@import "layouts/lay_work";
+@import "layouts/lay_video";
+@import "layouts/lay_services";
+@import "layouts/lay_reviews";
+@import "layouts/lay_servicesreviews";
+@import "layouts/lay_team";
+@import "layouts/lay_onepage";
+@import "layouts/lay_history";
+@import "layouts/lay_bymywork";
+@import "layouts/lay_clients";
+@import "layouts/lay_fromtwiter";
+@import "layouts/lay_contact";
+@import "layouts/lay_map";
+@import "layouts/lay_footer";
+@import "layouts/lay_tabssort";
+
+
+
+
+
+
+
+
+
+
+
+

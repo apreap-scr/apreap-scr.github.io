@@ -1,0 +1,181 @@
+.Logistics {
+  background-color: transparent;
+  padding: 135px 0;
+  margin-top: -330px;
+
+  .row {
+    margin-right: -50px;
+    margin-left: -50px;
+  }
+  .item {
+    text-align: center;
+    img {
+      width: 60%;
+    }
+  }
+  .text {
+    padding: 90px 0;
+    text-align: center;
+    @include font(#868686, "opensans", 30px, 400, 0.6px);
+    .bold {
+      font-weight: 700;
+    }
+  }
+  .text_both {
+    position: absolute;
+    top: 365px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .left, .right {
+      @include font(#616161, "MyriadPro-Regular", 32px, 400);
+      .bold {
+        @include font(#616161, "Open Sans Bold", 32px, 600);
+      }
+      .color {
+        @include font(#ff3663, "Open Sans Bold", 32px, 400);
+      }
+      line-height: 57px;
+    }
+    .left {
+      text-align: right;
+    }
+    .right {
+      text-align: left;
+      .color {
+        color: #2fd071;
+      }
+    }
+  }
+  .item-1-default {
+
+    margin-top: 70px;
+
+    display: block;
+  }
+  .item-2-media {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: $Medium - 1) {
+  .Logistics {
+    padding-top: 170px;
+    .getapp-media1 {
+      position: absolute;
+      top: 120px;
+      right: 0;
+    }
+    .getapp-media2 {
+      position: absolute;
+      top: 500px;
+      left: 0;
+    }
+    .item-1-default {
+      display: none;
+    }
+    .item-2-media {
+      display: block;
+      .img-w-l, .img-w-r {
+        display: flex;
+        .img-w-l-img {
+          width: 60%;
+          img {
+            width: 100%;
+          }
+        }
+        .img-w-l-text {
+          width: 40%;
+          .left, .right {
+            @include font(#616161, "MyriadPro-Regular", 24px, 400);
+            .bold {
+              @include font(#616161, "Open Sans Bold", 23px, 600);
+            }
+            .color {
+              @include font(#ff3663, "Open Sans Bold", 23px, 400);
+            }
+            line-height: 42px;
+          }
+          .left {
+            margin-top: 200px;
+            text-align: right;
+          }
+          .right {
+            margin-top: 200px;
+            text-align: left;
+            .color {
+              color: #2fd071;
+            }
+          }
+        }
+      }
+      & > .text {
+        font-size: 24px;
+      }
+    }
+    .item {
+      text-align: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $Small - 1) {
+  .Logistics {
+    padding: 236px 20px 0;
+    .getapp-media1 {
+      position: absolute;
+      top: 75px;
+      right: 41px;
+    }
+
+    .getapp-media2 {
+      top: 343px;
+      left: 41px;
+    }
+    .item {
+      text-align: center;
+      height: 328px;
+    }
+
+    .item-2-media {
+      .img-w-l, .img-w-r {
+
+        .img-w-l-text {
+          padding: 0 20px;
+          width: 40%;
+          .left, .right {
+            @include font(#616161, "MyriadPro-Regular", 15px, 400);
+            .bold {
+              @include font(#616161, "Open Sans Bold", 15px, 600);
+            }
+            .color {
+              @include font(#ff3663, "Open Sans Bold", 15px, 400);
+            }
+            line-height: 18px;
+          }
+          .left {
+            margin-top: 184px;
+          }
+          .right {
+            margin-top: 163px;
+          }
+        }
+      }
+      & > .text {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

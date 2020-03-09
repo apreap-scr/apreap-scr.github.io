@@ -1,0 +1,103 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 15/10/2018 18:19
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-heart:before { content: "\f100"; }
+.flaticon-star:before { content: "\f101"; }
+.flaticon-like:before { content: "\f102"; }
+.flaticon-rate-star-button:before { content: "\f103"; }
+.flaticon-mark-as-favorite-star:before { content: "\f104"; }
+.flaticon-laptop:before { content: "\f105"; }
+.flaticon-laptop-icon:before { content: "\f106"; }
+.flaticon-arrow:before { content: "\f107"; }
+.flaticon-arrow-1:before { content: "\f108"; }
+.flaticon-military:before { content: "\f109"; }
+.flaticon-left-arrow:before { content: "\f10a"; }
+.flaticon-move:before { content: "\f10b"; }
+.flaticon-expand:before { content: "\f10c"; }
+.flaticon-small-rocket-ship-silhouette:before { content: "\f10d"; }
+.flaticon-clock:before { content: "\f10e"; }
+.flaticon-clock-1:before { content: "\f10f"; }
+.flaticon-coffee-cup-on-a-plate-black-silhouettes:before { content: "\f110"; }
+.flaticon-trophy:before { content: "\f111"; }
+.flaticon-cup:before { content: "\f112"; }
+.flaticon-video-camera:before { content: "\f113"; }
+.flaticon-camera:before { content: "\f114"; }
+.flaticon-apple:before { content: "\f115"; }
+.flaticon-twitter-logo-silhouette:before { content: "\f116"; }
+.flaticon-desktop-monitor:before { content: "\f117"; }
+.flaticon-facebook-logo:before { content: "\f118"; }
+.flaticon-linked-in-logo-of-two-letters:before { content: "\f119"; }
+.flaticon-basketball:before { content: "\f11a"; }
+.flaticon-plus:before { content: "\f11b"; }
+.flaticon-marker:before { content: "\f11c"; }
+.flaticon-ball:before { content: "\f11d"; }
+.flaticon-linkedin:before { content: "\f11e"; }
+.flaticon-instagram:before { content: "\f11f"; }
+    
+    $font-Flaticon-heart: "\f100";
+    $font-Flaticon-star: "\f101";
+    $font-Flaticon-like: "\f102";
+    $font-Flaticon-rate-star-button: "\f103";
+    $font-Flaticon-mark-as-favorite-star: "\f104";
+    $font-Flaticon-laptop: "\f105";
+    $font-Flaticon-laptop-icon: "\f106";
+    $font-Flaticon-arrow: "\f107";
+    $font-Flaticon-arrow-1: "\f108";
+    $font-Flaticon-military: "\f109";
+    $font-Flaticon-left-arrow: "\f10a";
+    $font-Flaticon-move: "\f10b";
+    $font-Flaticon-expand: "\f10c";
+    $font-Flaticon-small-rocket-ship-silhouette: "\f10d";
+    $font-Flaticon-clock: "\f10e";
+    $font-Flaticon-clock-1: "\f10f";
+    $font-Flaticon-coffee-cup-on-a-plate-black-silhouettes: "\f110";
+    $font-Flaticon-trophy: "\f111";
+    $font-Flaticon-cup: "\f112";
+    $font-Flaticon-video-camera: "\f113";
+    $font-Flaticon-camera: "\f114";
+    $font-Flaticon-apple: "\f115";
+    $font-Flaticon-twitter-logo-silhouette: "\f116";
+    $font-Flaticon-desktop-monitor: "\f117";
+    $font-Flaticon-facebook-logo: "\f118";
+    $font-Flaticon-linked-in-logo-of-two-letters: "\f119";
+    $font-Flaticon-basketball: "\f11a";
+    $font-Flaticon-plus: "\f11b";
+    $font-Flaticon-marker: "\f11c";
+    $font-Flaticon-ball: "\f11d";
+    $font-Flaticon-linkedin: "\f11e";
+    $font-Flaticon-instagram: "\f11f";

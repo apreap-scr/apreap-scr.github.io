@@ -1,0 +1,118 @@
+.Amazing {
+  padding: 115px 0;
+  background-color: #EEF2F3;
+
+  text-align: center;
+
+  .col-2 {
+    width: 100/3 *1%;
+  }
+
+  .title {
+    @include font(#222222, "Montserrat", 40px, 700);
+
+    text-transform: uppercase;
+
+  }
+  .title2 {
+    padding: 25px 0 80px 0;
+    @include font(#777777, "Droid Serif", 16px, normal);
+    font-style: italic;
+  }
+  .wrap-img {
+    margin: 0 auto;
+    width: 221px;
+    height: 221px;
+    border: 7px solid #ffffff;
+    background-color: #111111;
+    border-radius: 50%;
+  }
+  .text1 {
+    padding-top: 25px;
+    @include font(#222222, "Montserrat", 16px, normal);
+  }
+  .text2 {
+    padding-top: 5px;
+    @include font(#777777, "Roboto Slab", 14px, 400);
+  }
+  .wrap-soc {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+
+  }
+  .soc-but {
+    margin: 0 10px;
+    width: 41px;
+    height: 41px;
+    border: 3px solid #222222;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: $delay;
+    &:hover {
+      border-color: #ff9200;
+      color: #ff9200;
+      transition: $delay;
+    }
+    i:before {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .text-bottom {
+    @include font(#777777, "Roboto Slab", 16px, 400);
+    padding-top: 45px;
+    line-height: 24px;
+  }
+
+}
+
+.brend {
+  padding: 60px 0;
+  .col-1 {
+    width: 25%;
+  }
+  .brend-itm {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: $Medium - 1) {
+  .Amazing {
+    padding: 30px 0;
+    .title2 {
+      padding: 25px 0;
+    }
+    .col-2 {
+      width: 100%;
+    }
+  }
+  .brend {
+    .brend-itm {
+      img{
+        width: 70%;
+      }
+    }
+    padding: 0;
+    .col-1 {
+      padding: 20px 0;
+      width: 50%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

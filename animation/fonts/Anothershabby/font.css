@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Anothershabby';
+  src: url('Anothershabby.woff') format('woff'),
+       url('Anothershabby.ttf') format('truetype'),
+       url('Anothershabby.svg#Anothershabby') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Anothershabby_pro_regular_v3_trial';
+  src: url('Anothershabby_pro_regular_v3_trial.eot');
+  src: url('Anothershabby_pro_regular_v3_trial.woff2') format('woff2'),
+       url('Anothershabby_pro_regular_v3_trial.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

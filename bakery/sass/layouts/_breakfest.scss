@@ -1,0 +1,210 @@
+
+.breakfest {
+  text-align: center;
+  background-image: url("images/bg_6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .col {
+    padding: 89px 0;
+    width: 50%;
+  }
+  .col-2 {
+    margin: 0 auto;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+}
+
+.breakfest-block {
+  //width: percentage(440px/($mainWidth/2));
+  margin: auto;
+
+}
+
+.breakfest-block-main {
+  padding: 50px 0 68px 0;
+  z-index: 10;
+  background-color: #F3F1E9;
+  background-image: url("images/brekfest_fon-fon.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 11;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 11px;
+    border: dashed 2px #9E9C93;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 12;
+    left: 0;
+    bottom: 0;
+    background-image: url("images/brekfest_fon-coner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.breakfest-block-under-1 {
+  position: absolute;
+  z-index: 9;
+  top: 26px;
+  bottom: 26px;
+  right: -13px;
+  width: 40%;
+  background-color: #D8D5C6;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    right: 9px;
+    bottom: 9px;
+    border: dashed 2px #9E9C93;
+  }
+}
+
+.breakfest-block-under-2 {
+  position: absolute;
+  z-index: 8;
+  top: 49px;
+  bottom: 49px;
+  right: -25px;
+  width: 40%;
+  background-color: #C0BDB1;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    right: 9px;
+    bottom: 9px;
+    border: dashed 2px #9E9C93;
+  }
+}
+
+.breakfest-title {
+  .name {
+    @include font(#ffffff, Alegreya, 60px, 700, 3px);
+  }
+  .discr {
+    @include font(#c8a593, Alegreya, 18px, 700, 0.9px);
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+}
+
+.breakfest-item {
+  .name {
+    margin-top: 62px;
+    @include font(#ffffff, Alegreya, 30px, 700, 1.5px);
+  }
+  .discr {
+    margin-top: 10px;
+    @include font(#c2beba, "Proxima Nova", 16px, 400, 0.8px);
+  }
+  .price {
+    margin-top: 34px;
+    @include font(#dfc691, Alegreya, 36px, 400, 1.8px);
+  }
+}
+
+.breakfest-block-date {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .i1, .i2 {
+    @include font(#56534c, Alegreya, 14px, 700, 0.7px);
+    text-transform: uppercase;
+  }
+}
+
+.breakfest-block-img {
+  width: 80%;
+  object-fit: cover;
+}
+
+.breakfest-block-name {
+  margin-top: 75px;
+  @include font(#56534c, Alegreya, 44px, 700, 1.1px);
+  line-height: 60px;
+}
+
+.breakfest-block-text {
+  margin: 40px 46px 0;
+  @include font(#56534c, "Proxima Nova", 14px, 400, 0.7px);
+  line-height: 30px;
+}
+
+.breakfest-block-link {
+  z-index: 20;
+  margin: 55px auto 0;
+  display: inline-block;
+  padding: 15px 15%;
+  border: solid 1px #9E9C92;
+  @include font(#a47d5e, Alegreya, 18px, 700, 0.9px);
+  text-transform: uppercase;
+}
+
+//------------------------< media >------------------------------//
+@media only screen and (max-width: $Large - 1) {
+  .breakfest {
+
+    .col {
+      width: 100%;
+    }
+    .col-2 {
+      width: 90%;
+      padding: 20px 0;
+    }
+      background-image: url("images/bg_6mobile.jpg");
+  }
+
+  .breakfest-block-main {
+    padding: 50px 5px 68px;
+  }
+  .breakfest-block-text {
+    margin: 40px 20px 0;
+  }
+}
+
+@media only screen and (max-width: $Medium - 1) {
+  .breakfest-block-under-1, .breakfest-block-under-2{
+    display: none;
+  }
+  .breakfest .container {
+    width: 100%;
+  }
+  .breakfest .col-2 {
+    //padding: 0;
+  }
+  .breakfest-block-text{
+    font-size: 20px;
+    padding: 0 3%;
+  }
+  .breakfest-block{
+    width: 100%;
+  }
+  .breakfest-block-main {
+    padding: 5%;
+  }
+  .breakfest-block-link{
+    margin-bottom: 20px;
+  }
+
+}

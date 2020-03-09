@@ -1,0 +1,45 @@
+.lay_clients {
+  text-align: center;
+  padding: 78px 0 83px;
+
+  .col {
+    width: 100%;
+  }
+
+  .col-1 {
+    width: 100/5 *1%;
+    padding: 0 15px;
+    height: 70px;
+    div {
+      width: 100%;
+      height: 100%;
+      background-color: #F6F6F6;
+    }
+  }
+  .title {
+    @include font(#000000, "Open Sans", 30px, 300, -0.9px);
+  }
+
+  .hr {
+    padding: 30px;
+    hr {
+      margin: 0 auto;
+      width: 50px;
+      height: 1px;
+      border: none;
+      background-color: #bbbbbb;
+    }
+  }
+  .text{
+    overflow: hidden;
+    width: percentage(776px/$max_width);
+    margin: 45px auto 0;
+    height: 40px;
+    color: #868686;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+
+}

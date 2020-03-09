@@ -1,0 +1,73 @@
+//-----------------< reset >------------------
+@import "reset";
+
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  text-decoration: none;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+
+ul {
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+//--------------------------------------------
+
+@import "variables";
+@import "mixins/mixin_font_face";
+@import "mixins/media";
+@import "mixins/otherMixins";
+@import "mixins/burger";
+@import "mixins/icomoon";
+
+//.container { //???????????????
+//  max-width: $mainWidth;
+//  margin: 0 auto;
+//}
+
+.mainWrapp{
+  //padding-bottom: 50px;
+}
+
+// .for_section {
+//   padding: 80px 0 100px;
+//   &.gray_section {
+//     background-color: #f3f3f3;
+//   }
+// }
+
+//
+@include font-face(Scriptina, "fonts/Scriptina/Scriptina", 500, normal, eot woff2 woff);
+@include font-face(Alegreya, "fonts/Alegreya-Regular/Alegreya-Regular", 500, normal, eot woff2 woff);
+@include font-face("Playfair Display", "fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular", 500, normal, eot woff2 woff);
+@include font-face("Proxima Nova", "fonts/ProximaNova-Regular/ProximaNova-Regular", 500, normal, eot woff2 woff);
+@include font-face("TimesNewRomanPSMT", "fonts/TimesNewRomanPSMT/TimesNewRomanPSMT", 500, normal, eot woff2 woff);
+@include font-face("fontello", "fonts/fontello/fontello", 500, normal, eot woff2 woff);
+@include font-face("IcoMoon", "fonts/IcoMoon/icomoon", 500, normal, eot woff2 woff);
+
+@import "layouts/header";
+@import "layouts/menu";
+@import "layouts/artOfCakes";
+@import "layouts/pancakes";
+@import "layouts/breakfest";
+@import "layouts/dish";
+@import "layouts/footer";
+@import "layouts/slider";
+
+
+
+
+
+
+
+

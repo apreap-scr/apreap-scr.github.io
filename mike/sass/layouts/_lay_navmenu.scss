@@ -1,0 +1,138 @@
+.lay_navmenu {
+  $this_heigh: 62px;
+
+  background-image: linear-gradient(to right, #004B91 50%, #196FC0 50%);
+
+  //---- fon -------
+  //.fon_wrap {
+  //  z-index: 1;
+  //  position: absolute;
+  //  top: 0;
+  //  left: 0;
+  //  height: $this_heigh;
+  //  width: 100%;
+  //  display: flex;
+  //  flex-wrap: nowrap;
+  //
+  //
+  //}
+  //.fon_name {
+  //  background-color: #004B91;
+  //  width: 30%;
+  //  height: 100%;
+  //
+  //}
+  //.fon_menu {
+  //  background-color: #196FC0;
+  //  width: 70%;
+  //  height: 100%;
+  //}
+  //------------------------
+  .container {
+    z-index: 2;
+  }
+  .col {
+    height: $this_heigh;
+    display: flex;
+    align-items: center;
+  }
+  .col-1 {
+    background-color: #004B91;
+    width: percentage(100px/$max_width);
+  }
+  .col-2 {
+    background-color: #196FC0;
+    width: percentage(1070px/$max_width);
+  }
+}
+
+.lay_navmenu-nav {
+  width: 100%;
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  li {
+    margin-left: 10px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include font(#ffffff, "Open Sans - Semibold", 13px, 400, -0.26px);
+    text-transform: uppercase;
+    padding: 22px 5px;
+    &:hover {
+      margin-bottom: -3px;
+      border-bottom: solid 3px #fff;
+    }
+  }
+}
+
+//-----
+
+
+@media only screen and (max-width: $ExtraLarge - 1) {
+  .lay_navmenu {
+    //  .fon_name, .fon_menu{
+    //    display: none;
+    //  }
+    //  .col-1, .col-2{
+    //    width: 100%;
+    //  }
+    //}
+    //.fon_name, .fon_menu {
+    //  background-color: #004B91;
+    //}
+
+    .menu {
+      border: solid 2px red;
+    }
+    //
+    .lay_navmenu_button {
+      width: 50px;
+      height: 50px;
+      background-color: #fff60c;
+      position: fixed;
+      top: 20px;
+      right: 20px;z-index: 1000;
+    }
+
+    .lay_navmenu-nav {
+      //position: fixed;
+      //top: 100px;
+      //width: 90%;
+      //background-color: #000;
+      //z-index: 1000;
+      //ul {
+      //  flex-direction: column;
+      //}
+      display: none;
+    }
+    .lay_navmenu_button-active{
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: $Medium - 1) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

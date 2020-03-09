@@ -1,0 +1,62 @@
+.Footer {
+  padding: 20px 0;
+  background-color: $color-white;
+
+  .col-1{
+    width: 100 / 3 * 1%;
+    display: flex;
+    align-items: center;
+  }
+
+  .copy{
+    @include font(#555555, "Montserrat", 14px);
+  }
+
+
+  .wrap-soc {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+
+  }
+  .soc-but {
+    margin: 0 10px;
+    width: 41px;
+    height: 41px;
+    background-color: #222222;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: $delay;
+    &:hover {
+      i:before {
+        border-color: #ff9200;
+        color: $color-act_soc;
+        transition: $delay;
+      }
+     }
+    i:before {
+      margin: 0;color: $color-white;
+      padding: 0;
+    }
+
+  }
+}
+
+@media only screen and (max-width: $Large - 1) {
+  .Footer{
+    .copy{
+      width: 100%;
+    }
+    text-align: center;
+    .col-1{
+      width: 100%;
+    }
+  }
+}
+
+
+
+

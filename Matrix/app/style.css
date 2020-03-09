@@ -1,0 +1,308 @@
+@font-face {
+    font-family: 'Arial';
+    src: url('font/Arial/ArialMT.eot');
+    src: local('Arial'), local('ArialMT'),
+    url('font/Arial/ArialMT.eot?#iefix') format('embedded-opentype'),
+    url('font/Arial/ArialMT.woff') format('woff'),
+    url('font/Arial/ArialMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Arial';
+    font-size: 14px;
+    line-height: 22px;
+}
+
+body {
+    background-color: #fff;
+}
+
+.main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.fond-color-first {
+    background-color: #777777;
+}
+
+.fond-color-second {
+    background-color: #dcdcdc;
+}
+
+.line-between-blocks {
+    color: #696969;
+    margin: 0;
+}
+
+/*-----------< head >-------------*/
+.head {
+    padding: 25px 0;
+}
+
+.head:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.head .underline {
+    text-decoration: underline;
+}
+
+.head-gutter {
+    margin-left: 22px;
+}
+
+.head-blocks {
+    height: 107px;
+    float: left;
+}
+
+.head-inner-first {
+    width: 12.7%;
+}
+
+.head-inner-first img {
+    width: 100%;
+    height: 100%;
+}
+
+.head-inner-second {
+    width: 29.2%;
+}
+
+.head-inner-third {
+    width: 53.5%;
+    text-align: right;
+    padding-right: 22px;
+    padding-top: 19px;
+}
+
+.head-inner-third a {
+    color: #ffffff;
+}
+
+.head-inner-third .phone {
+    text-decoration: none;
+}
+
+/*-----------< content >--------------*/
+.content {
+    padding: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-left {
+    width: 19.3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.content-center {
+    width: 78.6%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-gutter {
+    margin-left: 20px;
+}
+
+/*-----------< content content-center >--------------*/
+.content:after,
+.content-center-1:after,
+.content-center-2:after,
+.content-center-middle-block-wrap:after,
+.content-center-middle-block:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content-center-middle-block {
+    width: 100%;
+    height: 100%;
+}
+
+.content-center-1 {
+    float: left;
+    width: 100%;
+    color: #696969;
+}
+
+.content-center-1 .title {
+    font-weight: bold;
+}
+
+.content-center-1 .list {
+
+}
+
+.content-center-1 .descr {
+
+}
+
+.content-center-1 .marker {
+    font-weight: bold;
+
+}
+
+.content-center-padding {
+    padding: 20px;
+}
+
+.content-center-2 {
+    width: 49%;
+    float: left;
+    margin-top: 16px;
+    padding: 22px;
+    color: #696969;
+    text-align: justify;
+}
+
+.content-center-gutter {
+    margin-left: 15px;
+}
+
+.content-center-middle-block {
+    float: left;
+    width: 17.5%;
+    margin-left: 19px;
+    margin-top: 20px;
+    height: 150px;
+}
+
+.content-center-middle-block-wrapper {
+    margin-left: -20px;
+}
+
+.content-blocks {
+    float: left;
+}
+
+.content-left-bottom {
+    height: 134px;
+}
+
+.content-left-bottom img {
+    height: 100%;
+    width: 100%;
+}
+
+.content-left-main {
+    color: #fff;
+    padding: 17px 15px;
+}
+
+.content-left-main .point {
+
+    font-weight: bold;
+}
+
+/*------------< footer >--------------*/
+.footer {
+    padding: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-inner {
+    width: 30.9%;
+}
+
+.footer-inner-long {
+    width: 32.0%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-doubleinner {
+    height: 76px;
+}
+
+.footer-doubleinner img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-gutter {
+    margin-left: 29px;
+}
+
+.footer-inner {
+    display: flex;
+}
+
+.footer-inner-square {
+
+}
+
+.footer-inner-square li {
+    list-style-type: square;
+    color: #fff;
+    font-size: 22px;
+}
+
+.footer-inner-square li a {
+    color: #fff;
+}
+
+.footer-inner-point-1 li a,
+.footer-inner-point-2 li a {
+    color: #fff;
+}
+
+.footer-inner-point-2 {
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

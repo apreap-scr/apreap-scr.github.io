@@ -1,0 +1,110 @@
+.lay_map {
+
+  .col {
+    width: 100%;
+    height: 542px;
+  }
+  .map {
+    overflow: hidden;
+    background-size: auto;
+    background-image: url("img/map_dotted.png");
+    background-position:  0 100%;
+  }
+}
+
+.lay_map-w-location {
+  position: absolute;
+  &.one {
+    top: 100px;
+    left: 100px;
+  }
+  &.two {
+    top: 150px;
+    left: 700px;
+  }
+  //-----------------
+  width: 323px;
+  height: 126px;
+  .bottom-block {
+    display: flex;
+    align-items: center;
+    height: 38px;
+  }
+  .view {
+    @include font(#000000, "Open Sans", 10px, 400);
+  }
+  .office-name {
+    position: absolute;
+    right: 10px;
+    padding: 5px 2px 5px 16px;
+    border-bottom: solid 1px #196fc0;
+    @include font(#000000, "Open Sans - Semibold", 14px, 400);
+    text-transform: uppercase;
+    &:after {
+      content: "";
+      display: block;
+      width: 22px;
+      height: 22px;
+      background-color: #196fc0;
+      transform: rotate(45deg);
+      position: absolute;
+      left: -25px;
+      bottom: -11px;
+    }
+  }
+  .table {
+    width: 184px;
+    height: 87px;
+    background-color: #000000;
+    padding: 17px 0 17px 29px;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -15px;
+      right: 32px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 17px 15px 17px;
+      border-color: transparent #000 transparent transparent;
+    }
+    &:before {
+      content: "\f041";
+      font-family: FontAwesome;
+      position: absolute;
+      top: 15px;
+      left: 10px;
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+  .table-text1, .table-text2, .table-text3 {
+    @include font(#ffffff, Varela, 10px, 400);
+  }
+  .table-text1 {
+    line-height: 11px;
+  }
+  .table-text2 {
+    padding-top: 8px;
+  }
+  .table-text3 {
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

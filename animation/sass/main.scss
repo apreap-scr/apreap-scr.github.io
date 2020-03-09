@@ -1,0 +1,154 @@
+//-----------------< reset >------------------
+* {
+  position: relative;
+  box-sizing: border-box;
+
+  textarea:focus::-webkit-input-placeholder, input:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+  textarea:focus::-webkit-input-placeholder, input:focus:-moz-placeholder {
+    color: transparent;
+  }
+  textarea:focus::-webkit-input-placeholder, input:focus::-moz-placeholder {
+    color: transparent;
+  }
+  textarea:focus::-webkit-input-placeholder, input:focus:-ms-input-placeholder {
+    color: transparent;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+input[type=submit]{
+  cursor: pointer;
+}
+
+body{
+  background-color: #edf1f4;
+}
+
+$tr-animatiom: .25s;
+
+$Small: 576px;
+$Medium: 768px;
+$Large: 992px;
+$ExtraLarge: 1200px;
+
+@import "mixins/mixin_font_face";
+@import "mixins/other_mixins";
+@import "mixins/burger";
+//---------------------< class >-----------------------
+.sliders {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .slider {
+    width: 50%;
+    margin: 100px auto;
+  }
+  .slick-slide {
+    margin: 0px 20px;
+  }
+  .slick-slide img {
+    width: 100%;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+  .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+  }
+  .slick-active {
+    opacity: .5;
+  }
+  .slick-current {
+    opacity: 1;
+  }
+}
+
+.sliders .slick-slide {
+  outline: none;
+}
+
+div.g__getapp {
+  width: 267px;
+  margin: 0 auto;
+  height: 50px;
+  box-shadow: 0 0 7px 1px rgba(255, 255, 255, 0.55);
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  align-items: center;
+  .g__getapp__text {
+    @include font(#c64f62, "OpenSans-SemiBold", 22px, 400);
+  }
+  [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-size: 30px;
+    font-style: normal;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    color: #b5586b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: $Small - 1) {
+  div.g__getapp {
+    width: 160px;
+    height: 40px;
+    border-radius: 4px;
+    .g__getapp__text {
+      @include font(#c64f62, "OpenSans-SemiBold", 15px, 400);
+    }
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+      font-size: 20px;
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
+//-----------------------------------------------------
+//
+@include font-face("Anothershabby", "fonts/Anothershabby/Anothershabby", 500, normal, eot woff2 woff);
+@include font-face("OpenSans-SemiBold", "fonts/OpenSans-SemiBold/OpenSans-SemiBold", 500, normal, eot woff2 woff);
+@include font-face("MyriadPro-Regular", "fonts/MyriadPro-Regular/MyriadPro-Regular", 500, normal, eot woff2 woff);
+@include font-face("Open Sans Bold", "fonts/OpenSansBold/OpenSansBold", 500, normal, eot woff2 woff);
+@include font-face("opensans", "fonts/opensans/opensans", 500, normal, eot woff2 woff);
+@include font-face("OpenSans-Light", "fonts/OpenSans-Light/OpenSans-Light", 500, normal, eot woff2 woff);
+@include font-face("OpenSans-ExtraBold", "fonts/OpenSans-ExtraBold/OpenSans-ExtraBold", 500, normal, eot woff2 woff);
+
+@import "layouts/sliders";
+@import "layouts/Header";
+@import "layouts/Logistics";
+@import "layouts/Footer";
+@import "layouts/Contact_us";
+@import "layouts/Snikpic";
+@import "layouts/Map";
+@import "layouts/animation";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

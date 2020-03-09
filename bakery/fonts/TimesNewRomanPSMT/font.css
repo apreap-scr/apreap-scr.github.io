@@ -1,0 +1,18 @@
+@font-face {
+  font-family: '29252251';
+  src: url('29252251.eot');
+  src: url('29252251.woff2') format('woff2'),
+       url('29252251.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TimesNewRomanPSMT';
+  src: url('TimesNewRomanPSMT.woff') format('woff'),
+       url('TimesNewRomanPSMT.ttf') format('truetype'),
+       url('TimesNewRomanPSMT.svg#TimesNewRomanPSMT') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

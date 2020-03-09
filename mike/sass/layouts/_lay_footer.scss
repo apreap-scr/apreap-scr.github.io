@@ -1,0 +1,91 @@
+.lay_footer {
+
+  .soc-w {
+    height: 120px;
+    background-color: $color_blue;
+    display: flex;
+    border-bottom: solid 5px #000;
+  }
+  .romb-w {
+    padding: 0 50px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    height: 100%;
+    border-bottom: solid 5px #fff;
+    @include align();
+  }
+  .romb {
+
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border: 2px solid rgba(105, 161, 214, 0.35);
+    @include align();
+    margin: 0 8px;
+    &:hover {
+      background-color: #fff;
+      color: $color_blue;
+    }
+    [class^="flaticon-"]:before,
+    [class*=" flaticon-"]:before, [class^="flaticon-"]:after,
+    [class*=" flaticon-"]:after {
+      margin: 0;
+      font-size: 15px;
+    }
+  }
+
+}
+
+.lay_footer-menu {
+
+  border-bottom: solid 1px #dddddd;
+
+  ul {
+    height: 169px;
+    @include align();
+    li {
+      padding: 0 13px;
+    }
+  }
+  a {
+    @include font(#666666, "Open Sans", 13px, 400, -0.26px);
+    text-transform: uppercase;
+    &:hover {
+      color: $color_blue;
+    }
+  }
+
+}
+
+.lay_footer-menu-romb {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  & > * {
+    transform: rotate(-45deg);
+  }
+
+  //.icon{
+  [class^="flaticon-"]:before,
+  [class*=" flaticon-"]:before, [class^="flaticon-"]:after,
+  [class*=" flaticon-"]:after {
+    margin: 0;
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+    bottom: -10px;
+  }
+  //}
+}
+
+.lay_footer-mark {
+  text-align: center;
+  padding: 58px 0 148px 0;
+  @include font(#666666, "Open Sans", 13px, 400);
+
+}

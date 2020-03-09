@@ -1,0 +1,138 @@
+.lay_tabssort {
+  padding: 100px 0;
+  .col {
+    width: 100%;
+  }
+
+  .title1 {
+    @include font(#196fc0, Varela, 32px, 400, -1.6px);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .title {
+    text-align: center;
+    padding-top: 14px;
+    @include font(#666666, Varela, 16px, 400, 3.2px);
+    text-transform: uppercase;
+  }
+
+  // block
+  .ui-widget.ui-widget-content,
+  .ui-tabs-nav,
+  .ui-tabs-tab,
+  .ui-tabs-panel,
+  .ui-tabs-anchor {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    border: none;
+  }
+  .ui-widget.ui-widget-content {
+    padding-top: 42px;
+  }
+
+  .ui-tabs-anchor, .ui-tabs-tab, .ui-tabs-nav {
+    height: 100%;
+  }
+
+  .ui-tabs-nav {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  // a
+  .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: none;
+    display: block;
+  }
+
+  $this: #eeeeee;
+  .ui-tabs-nav {
+    border-top: 1px solid $this;
+    border-bottom: 3px solid $color_blue;
+    margin-bottom: 42px;
+  }
+  .ui-tabs-tab {
+    border-right: 1px solid $this;
+  }
+  .rectangle-wrap, .li-sort {
+    margin: 0;
+    padding: 0;
+    height: 47px;
+    width: 132px;
+    @include align();
+    @include font(#666666, Varela, 11px, 400);
+    text-transform: uppercase;
+  }
+  .li-sort-wrap {
+    width: 100%;
+    @include align(flex-end);
+  }
+  //-----------------------------------
+  .li-sort {
+    border-left: 1px solid $this;
+    width: 113px;
+  }
+  .li-sort-select {
+    width: 100%;
+    height: 100%;
+    @include font(#666666, Varela, 11px, 400);
+    text-transform: uppercase;
+    @include align();
+    outline: none;
+    box-shadow: none;
+    border: none;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+  }
+  //--------------------------------------
+  .ui-state-active, .ui-tabs-active {
+    background: none;
+    .rectangle-wrap {
+      background-color: $color_blue;
+      color: #fff;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -20px;
+      transform: translateX(-50%);
+      border: 10px solid transparent;
+      border-top: 10px solid $color_blue;
+    }
+  }
+
+}
+
+.lay_tabssort-fragment {
+  display: flex;
+  flex-wrap: wrap;
+  //border: solid 1px red;
+  width: 100%;
+  .col {
+    //border: solid 1px red;
+    width: 25%;
+    height: 250px;
+  }
+  .img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+//--------------------
+
+
+
+
+

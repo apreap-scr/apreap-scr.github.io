@@ -1,0 +1,79 @@
+.Map {
+  margin-bottom: -250px;
+  padding: 367px 0 0;
+  height: 1545px;
+  background-color: #39a7ff;
+  background-image: url("img/world-map-png-image-hd-compressor.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 0 112px;
+  .elips{
+    width: 100%;
+    height: 130px;
+    clip-path: ellipse(54% 180px at 50% 150%);
+    background-color: #edf1f4;
+    margin-top: 203px;
+  }
+  .text {
+    text-align: center;
+    @include font(#ffffff, "opensans", 60px, 300);
+    text-shadow: 3px 4px 43px rgba(0, 0, 0, 0.41);
+    line-height: 70px;
+  }
+  .free_block {
+    margin: 116px auto 135px;
+    width: 337px;
+    height: 408px;
+    box-shadow: 0 4px 32px rgba(24, 24, 24, 0.47);
+    background-color: #39a7ff;
+    border: solid 8px #007ed3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .free_block-text {
+    @include font(#ffffff, "opensans", 45px, 300);
+  }
+}
+@media only screen and (max-width: $Medium - 1) {
+
+  .Map {
+    margin-bottom: 0;
+    background-position: 0 45px;
+    padding: 140px 0;
+    height: 992px;
+    .text{
+      font-size: 42px;
+      line-height: 39.47px;
+    }
+    .free_block{
+      margin: 82px auto 67px;
+      width: 305px;
+      height: 269px;
+    }
+    .free_block-text{
+      margin: 82px auto 67px;
+      font-size: 26px;
+    }
+    .elips{
+      margin-top: 139px;
+    }
+  }
+
+}
+@media only screen and (max-width: $Small - 1) {
+  .Map {
+    height: 770px;
+    padding: 30px 0;
+    .free_block{
+      margin: 40px auto;
+      width: 200px;
+      height: 200px;
+    }
+    .elips{
+      margin-top: 137px;
+    }
+  }
+}
+
+

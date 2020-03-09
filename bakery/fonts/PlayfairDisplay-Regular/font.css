@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'PlayfairDisplay-Regular';
+  src: url('PlayfairDisplay-Regular.eot');
+  src: url('PlayfairDisplay-Regular.woff2') format('woff2'),
+       url('PlayfairDisplay-Regular.woff') format('woff'),
+       url('PlayfairDisplay-Regular.ttf') format('truetype'),
+       url('PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg'),
+       url('PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

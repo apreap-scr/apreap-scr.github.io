@@ -1,0 +1,118 @@
+//-----------------< reset >------------------
+@import "reset";
+
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  text-decoration: none;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  textarea:focus::-webkit-input-placeholder, input:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+  textarea:focus::-webkit-input-placeholder, input:focus:-moz-placeholder {
+    color: transparent;
+  }
+  textarea:focus::-webkit-input-placeholder, input:focus::-moz-placeholder {
+    color: transparent;
+  }
+  textarea:focus::-webkit-input-placeholder, input:focus:-ms-input-placeholder {
+    color: transparent;
+  }
+
+}
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+
+ul {
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+input {outline:none;}
+
+//------------------------< variables >----------------
+$max_width: 940px;
+
+$Small: 576px;
+$Medium: 768px;
+$Large: 992px;
+$ExtraLarge: 1200px;
+
+$color-white: #FAFEFF;
+$color-act_soc: #ff9200;
+
+$delay: 0.3s;
+//------------------------< media >--------------------
+.container {
+  max-width: $max_width;
+  width: 90%;
+  max-width: 940px;
+  margin: 0 auto;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .col {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: $Medium - 1) {
+  .row {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+//.main-wrap{
+//  width: 90%;
+//}
+
+
+//---------------------< class >-----------------------
+
+//-----------------------------------------------------
+@import "mixins/mixin_font_face";
+@import "mixins/other_mixins";
+@import "mixins/burger";
+
+@include font-face("Montserrat", "fonts/montserrat-regular/montserrat-regular", 500, normal, eot woff2 woff);
+@include font-face("Droid Serif", "fonts/droidserif-regular/droidserif-regular", 500, normal, eot woff2 woff);
+@include font-face("Roboto Slab", "fonts/RobotoSlab-Regular/RobotoSlab-Regular", 500, normal, eot woff2 woff);
+
+@import "layouts/Header";
+@import "layouts/Services";
+@import "layouts/Portfolio";
+@import "layouts/About_us";
+@import "layouts/Amazing";
+@import "layouts/Contact";
+@import "layouts/Footer";
+
+
+@media only screen and (max-width: $Medium - 1) {
+  .container .row {
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+

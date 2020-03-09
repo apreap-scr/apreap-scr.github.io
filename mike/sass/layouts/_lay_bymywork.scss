@@ -1,0 +1,42 @@
+.lay_bymywork {
+  text-align: center;
+  padding: 155px 0;
+
+  background-image: url("img/rectangle_34.jpg");
+
+  .col {
+    width: 100%;
+  }
+  .title1 {
+    @include font(#ffffff, "Open Sans - Semibold", 36px, 400, -0.72px);
+
+  }
+  .title {
+    padding-top: 18px;
+    @include font(#ffffff, "Open Sans", 20px, 300);
+  }
+  .w-link {
+    padding-top: 97px;
+    display: flex;
+    justify-content: center;
+  }
+  .link1, .link2 {
+    @include align();
+    margin: 0 10px;
+    @include font(#ffffff, Varela, 13px, 400);
+    text-transform: uppercase;
+  }
+  .link1 {
+    /* Style for "Rectangle" */
+    width: 170px;
+    height: 49px;
+    border: 1px solid #f0f0f0;
+    //background-color: #ffffff;
+  }
+  .link2 {
+    /* Style for "Rectangle" */
+    width: 170px;
+    height: 49px;
+    background-color: #196fc0;
+  }
+}

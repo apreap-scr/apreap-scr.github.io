@@ -1,0 +1,104 @@
+
+.slider {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .slider {
+    width: 50%;
+    margin: 100px auto;
+  }
+
+  .slick-slide {
+    margin: 0px 20px;
+  }
+
+  .slick-slide img {
+    width: 100%;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+
+  .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+  }
+
+  .slick-active {
+    opacity: .5;
+  }
+
+  .slick-current {
+    opacity: 1;
+  }
+}
+
+//------------------------------------
+.lazy {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #004B91;
+  //height: 430px;
+  .slick-slide {
+    margin: 0;
+  }
+  .slick-prev {
+    left: 100px;
+    //left: percentage(215px/1600px);
+  }
+  .slick-next {
+    right: 100px;
+  }
+  .slick-prev, .slick-next {
+    z-index: 10;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ffffff;
+    background: none;
+    transform: rotate(45deg);
+  }
+  .slick-prev:before {
+    content: "\f104";
+  }
+  .slick-next:before {
+    content: "\f105";
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    transform: rotate(-45deg);
+    font-family: FontAwesome;
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

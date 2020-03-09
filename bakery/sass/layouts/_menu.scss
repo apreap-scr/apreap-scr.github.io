@@ -1,0 +1,93 @@
+//--------------------< header menu >--------------------------//
+.header .col-2 {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.nav_menu {
+
+  padding-top: 20px;
+  width: 100%;
+  a {
+    @include font-source(Alegreya, 14px, $white);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4.2px;
+    padding: inherit;
+    border-radius: 5px;
+    &:hover {
+      background-color: #A8A197;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    flex-wrap: nowrap;
+  }
+  li {
+    padding: 10px;
+  }
+}
+
+nav.nav_menu-active {
+  display: block;
+  ul {
+    height: 250px;
+    transition: .3s;
+  }
+}
+
+.menu-button {
+  display: none;
+  padding: .5em;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.burger-icon {
+  @include burger(25px, 3px, 5px, #444);
+}
+
+.menu-button.is-active .burger-icon {
+  @include burger-to-cross;
+}
+
+//------------------------< media >------------------------------//
+@include respond(small) {
+  ._header .col-2 {
+    flex-direction: column;
+  }
+  .nav_menu {
+    position: absolute;
+    top: -20px;
+    right: 43px;
+    z-index: 100;
+
+    width: 85%;
+    ul {
+      transition: .3s;
+      background-color: #A8A197;
+      height: 0px;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    li {
+
+    }
+  }
+
+  .menu-button {
+    display: inline-block;
+  }
+}
+
+
+
+
+
+

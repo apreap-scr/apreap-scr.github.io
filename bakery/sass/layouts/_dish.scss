@@ -1,0 +1,143 @@
+._dish {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #F4F1E9;
+
+  .col {
+
+  }
+  .col-1 {
+    width: percentage(290px/$mainWidth);
+    top: -35px;
+  }
+  .col-2 {
+    width: percentage(970px/$mainWidth);
+    padding: 90px 0 0 130px;
+  }
+
+  .block-proces {
+    background-image: url("images/img_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #cccccc;
+    height: 556px;
+    border: solid 8px #fff;
+    .tull {
+      position: absolute;
+      bottom: -26px;
+      left: -26px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      width: 171px;
+      height: 60px;
+      @include font(#DFC691, Alegreya, 18px, 700, 1.8px);
+      text-transform: uppercase;
+    }
+  }
+
+  .proces-wrapp {
+    background-color: rgba(225, 225, 225, .5);
+    width: 198px;
+    top: -31px;
+    height: 602px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .proces {
+    height: 33%;
+    padding-top: 52px;
+
+    .name {
+      text-transform: uppercase;
+      @include font(#a47d5e, Alegreya, 18px, 700, 6px);
+    }
+    .time {
+      margin-top: 26px;
+      @include font(#56534c, Alegreya, 60px, 700, 6px);
+    }
+    .min {
+      margin-top: 8px;
+      @include font(#979285, Alegreya, 14px, 700, 1.8px);
+    }
+  }
+  .procesFinish {
+    padding-top: 26px;
+    .time {
+      margin-top: 26px;
+      @include font(#dfc691, Alegreya, 92px, 700, 9.2px);
+    }
+  }
+}
+
+.dish-block {
+  padding: 30px 0;
+  .img {
+
+  }
+  .name {
+    margin-top: 25px;
+    @include font(#a47d5e, Alegreya, 30px, 700, 0.75px);
+  }
+  .discr {
+    margin-top: 23px;
+    @include font(#56534c, "Proxima Nova", 14px, 400, 1.4px);
+  }
+}
+
+.dish-title {
+  @include font(#56534c, Alegreya, 48px, 700, 1.2px);
+}
+
+.dish-discr {
+  margin-top: 15px;
+  @include font(#a47d5e, Alegreya, 14px, 700, 1.4px);
+  text-transform: uppercase;
+}
+
+//------------------------< media >------------------------------//
+@media only screen and (max-width: $Medium - 1) {
+
+  //@include respond(medium) {
+  ._dish {
+    padding-bottom: 0;
+    .col-1, .col-2 {
+      width: 100%;
+    }
+    .col-1 {
+      height: auto;
+      top: 0;
+      order: 2;
+      padding: 40px 0;
+    }
+    .col-2 {
+      padding-left: 0;
+    }
+    .block-proces {
+      //height: 200px;
+    }
+    .block-proces .tull {
+      left: 0;
+    }
+    .proces-wrapp {
+      top: 0;
+      height: 100%;
+    }
+    .proces {
+      padding-top: 30px;
+    }
+    .procesFinish .time{
+      margin-top: -7px;
+    }
+  }
+}
+
+
+
+
+
+

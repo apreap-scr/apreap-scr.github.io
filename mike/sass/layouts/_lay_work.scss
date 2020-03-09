@@ -1,0 +1,123 @@
+.lay_work {
+  padding: 94px 0;
+  text-align: center;
+  .col {
+    width: 25%;
+    padding: 52px 25px;
+
+  }
+
+  .title {
+    width: 100%;
+    .name {
+      @include font(#196fc0, Varela, 32px, 400, -1.6px);
+      padding-bottom: 8px;
+    }
+    .discr {
+      @include font(#666666, Varela, 16px, 400, 3.2px);
+      text-transform: uppercase;
+      padding-bottom: 20px;
+    }
+    .discr {
+      overflow: hidden;
+    }
+    .discr:before,
+    .discr:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      width: 100%;
+      width: 40px;
+      height: 1px;
+      background-color: #666666;
+      border: solid #FFF;
+      border-width: 0 10px;
+    }
+    .discr:before {
+      margin-left: -100%;
+    }
+    .discr:after {
+      margin-right: -100%;
+    }
+  }
+}
+
+.lay_studies-blocks {
+  .romb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid #dddddd;
+    width: 76px;
+    height: 76px;
+    box-shadow: 5px 5px 0px 0px #E5E5E5,
+    5px 5px 0px 0px #E5E5E5,
+    5px 5px 0px 0px #E5E5E5;
+
+    [class^="flaticon-"]:before,
+    [class*=" flaticon-"]:before, [class^="flaticon-"]:after,
+    [class*=" flaticon-"]:after {
+      margin: 0;
+      font-size: 30px;
+    }
+  }
+
+  .name {
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 52px 0 0;
+    @include font(#000000, "Open Sans - Semibold", 16px, 400, normal);
+    text-transform: uppercase;
+  }
+  .text {
+    padding: 30px 0;
+    overflow: hidden;
+    height: 124px;
+    @include font(#000000, "Open Sans", 13px, 300, normal);
+    line-height: 22.1px;
+  }
+  .hr {
+    margin: 0 auto 31px;
+    display: block;
+    width: 50px;
+    height: 1px;
+    border: none;
+    background-color: #dddddd;
+  }
+  .read {
+    @include font(#999999, Varela, 11px, 400, normal);
+    text-transform: uppercase;
+  }
+  &:hover {
+    .romb {
+      background-color: #196FC0;
+      [class^="flaticon-"]:before,
+      [class*=" flaticon-"]:before, [class^="flaticon-"]:after,
+      [class*=" flaticon-"]:after {
+        color: #fff;
+      }
+      &:after {
+        content: "";
+        display: block;
+        border: 2px solid #fff;
+        $this: 5px;
+        top: $this;
+        bottom: $this;
+        left: $this;
+        right: $this;
+        position: absolute;
+      }
+    }
+    .name, .read {
+      color: #196FC0;
+    }
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+@mixin font($color, $family, $size, $weight:normal, $spacing:normal) {
+  color: $color;
+  font-family: $family;
+  font-size: $size;
+  line-height: $size;
+  font-weight: $weight;
+  letter-spacing: $spacing;
+}
+
+@mixin align($justifyContent:center){
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: center;
+}
+
+
+
